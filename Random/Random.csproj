@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BF77085-D5EA-4759-A0C6-2B22C7A46712}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Troschuetz.Random</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Troschuetz.Random</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\Troschuetz.Random.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\Troschuetz.Random.xml</DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ContinuousRNDs\StudentsTDistribution.cs" />
+    <Compile Include="ContinuousRNDs\WeibullDistribution.cs" />
+    <Compile Include="DiscreteRNDs\BernoulliDistribution.cs" />
+    <Compile Include="DiscreteRNDs\BinomialDistribution.cs" />
+    <Compile Include="ContinuousRNDs\ErlangDistribution.cs" />
+    <Compile Include="ContinuousRNDs\BetaPrimeDistribution.cs" />
+    <Compile Include="ContinuousRNDs\ChiSquareDistribution.cs" />
+    <Compile Include="ContinuousRNDs\ChiDistribution.cs" />
+    <Compile Include="ContinuousRNDs\FisherSnedecorDistribution.cs" />
+    <Compile Include="ContinuousRNDs\FisherTippettDistribution.cs" />
+    <Compile Include="ContinuousRNDs\LaplaceDistribution.cs" />
+    <Compile Include="ContinuousRNDs\RayleighDistribution.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContinuousRNDs\BetaDistribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContinuousRNDs\CauchyDistribution.cs" />
+    <Compile Include="ContinuousRNDs\ContinuousUniformDistribution.cs" />
+    <Compile Include="DiscreteRNDs\DiscreteUniformDistribution.cs" />
+    <Compile Include="ContinuousRNDs\ExponentialDistribution.cs" />
+    <Compile Include="ContinuousRNDs\GammaDistribution.cs" />
+    <Compile Include="DiscreteRNDs\GeometricDistribution.cs" />
+    <Compile Include="ContinuousRNDs\LognormalDistribution.cs" />
+    <Compile Include="ContinuousRNDs\NormalDistribution.cs" />
+    <Compile Include="ContinuousRNDs\ParetoDistribution.cs" />
+    <Compile Include="DiscreteRNDs\PoissonDistribution.cs" />
+    <Compile Include="ContinuousRNDs\PowerDistribution.cs" />
+    <Compile Include="ContinuousRNDs\TriangularDistribution.cs" />
+    <Compile Include="PseudoRNGs\ALFGenerator.cs" />
+    <Compile Include="PseudoRNGs\XorShift128Generator.cs" />
+    <Compile Include="PseudoRNGs\MT19937Generator.cs" />
+    <Compile Include="PseudoRNGs\StandardGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Distribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LGPL.rtf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
